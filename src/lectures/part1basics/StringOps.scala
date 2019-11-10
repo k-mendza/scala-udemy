@@ -5,10 +5,12 @@ object StringOps extends App {
   // s interpolated String
   val name = "John"
   val age = 13
-  val sstr = s"Hi $name you will be ${age + 1} next year!"
-  println(sstr)
+  val sStr = s"Hi $name you will be ${age + 1} next year!"
+  println(sStr)
 
   // f interpolated String
+  val fStr = f"Formatted value of 1 is ${1f}%2.2f"
+  println(fStr)
 
   // raw String
   println(raw"This is raw \n string")
