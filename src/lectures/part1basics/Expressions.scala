@@ -20,10 +20,10 @@ object Expressions extends App {
     i += 1
   }
 
-  val aUnitValue = (myVar = 5)
+  val aUnitValue: Unit = (myVar = 5)
   println(aUnitValue)
 
-  val codeBlock = {
+  val codeBlock: String = {
     val y = 2
     val z = y + 1
 
