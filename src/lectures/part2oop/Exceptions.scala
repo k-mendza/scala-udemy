@@ -2,6 +2,18 @@ package lectures.part2oop
 
 object Exceptions extends App {
 
-  val x: String = null
-  println(x.length)
+  def isExceptionThrown(throwException: Boolean): Int = {
+    if (throwException) throw new RuntimeException
+    else 99
+  }
+
+  val myIntVal = try {
+    isExceptionThrown(true)
+  } catch {
+    case e: RuntimeException => 11
+  } finally {
+    println("finally")
+  }
+
+  println(myIntVal)
 }
